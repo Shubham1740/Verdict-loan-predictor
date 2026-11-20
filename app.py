@@ -1,12 +1,14 @@
 from flask import Flask, render_template, request
 import numpy as np
 import pickle
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = pickle.load(open(os.path.join(BASE_DIR, "model.pkl"), "rb"))
+
 
 # Initialize Flask app
 app = Flask(__name__)
-
-# Load pickled model
-model = pickle.load(open("model.pkl", "rb"))
 
 
 @app.route("/", methods=["GET", "POST"])
