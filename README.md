@@ -1,5 +1,7 @@
 # Verdict · Loan Approval Predictor
 
+🔗 **Live demo:** [shubham2140.pythonanywhere.com](https://shubham2140.pythonanywhere.com/)
+
 Verdict is a small Flask web app that predicts whether a loan application is likely to be approved. You fill in an applicant's details, and a pre-trained machine-learning model returns an approved / not approved result along with its confidence.
 
 ## Features
